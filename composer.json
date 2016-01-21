@@ -1,0 +1,23 @@
+{
+    "name": "jream/recursive",
+    "description": "Recursive Array Tools",
+    "homepage": "http://jream.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeses Boyer",
+            "email": "hello@jream.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jream\\": "src/Recursive"
+        }
+    }
+}
