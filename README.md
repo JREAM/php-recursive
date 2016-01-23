@@ -1,5 +1,6 @@
 # Recursive PHP
 <img src="https://travis-ci.org/JREAM/php-recursion.svg?branch=master">
+<a href="https://codeclimate.com/github/JREAM/php-recursive"><img src="https://codeclimate.com/github/JREAM/php-recursive/badges/gpa.svg" /></a>
 
 A PHP Library that makes recursive methods easy to work with.
 

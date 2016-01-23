@@ -1,0 +1,18 @@
+engines:
+  rubocop:
+    enabled: true
+  golint:
+    enabled: true
+  gofmt:
+    enabled: true
+  eslint:
+    enabled: false
+  csslint:
+    enabled: false
+
+ratings:
+  paths:
+    src/**
+
+exclude_paths:
+  - vendor/**/*
