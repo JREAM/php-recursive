@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Jream\Recursive\Build</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Jream.html">
+						Jream<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Jream.Recursive.html">
+						Recursive					</a>
+
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Jream.Recursive.AbstractBase.html">AbstractBase</a></li>
+				<li class="active"><a href="class-Jream.Recursive.Build.html">Build</a></li>
+				<li><a href="class-Jream.Recursive.Dom.html">Dom</a></li>
+				<li><a href="class-Jream.Recursive.Find.html">Find</a></li>
+				<li><a href="class-Jream.Recursive.Flatten.html">Flatten</a></li>
+				<li><a href="class-Jream.Recursive.Modify.html">Modify</a></li>
+				<li><a href="class-Jream.Recursive.Replace.html">Replace</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Jream.Recursive.Exception.html">Exception</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Jream.Recursive.InvalidArgumentException.html">InvalidArgumentException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Jream.Recursive.html" title="Summary of Jream\Recursive"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Build</h1>
+
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Jream.Recursive.AbstractBase.html"><span>Jream\Recursive\AbstractBase</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Jream\Recursive\Build</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Jream.html">Jream</a>\<a href="namespace-Jream.Recursive.html">Recursive</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Jream.Recursive.Build.html#10-75" title="Go to source code">Recursive/Build.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="fromString" id="_fromString">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_fromString">#</a>
+		<code><a href="source-class-Jream.Recursive.Build.html#13-73" title="Go to source code">fromString</a>( <span>string <var>$string</var></span>, <span>string <var>$separator</var> = <span class="php-quote">'.'</span></span> )</code>
+
+		<div class="description short">
+			<p>Create a multi-dimensional array from a string</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a multi-dimensional array from a string</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd>The string to use</dd>
+					<dt><var>$separator</var></dt>
+					<dd>The separator, defaults to "."</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>fromString("this.gets.deep");
+    produces:
+    ['this', ['gets', ['deep']]]</p>
+
+<pre><code>fromString('this.gets.deep|bro|sis');
+['this', ['gets', ['deep', 'bro', 'sis']]]
+Note: If you duplicate a sibling, eg: bro|bro, it will only use one key.
+
+Using a custom separator (it cannot be the pipe |)
+fromString('this-&gt;gets-&gt;deep|bro|sis', '-&gt;');
+['this', ['gets', ['deep', 'bro', 'sis']]]
+</code></pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Jream.Recursive.AbstractBase.html#methods">Jream\Recursive\AbstractBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Jream.Recursive.AbstractBase.html#__createIterator">_createIterator()</a>, 
+			<a href="class-Jream.Recursive.AbstractBase.html#_get">get()</a>, 
+			<a href="class-Jream.Recursive.AbstractBase.html#_setMaxDepth">setMaxDepth()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Jream.Recursive.AbstractBase.html#constants">Jream\Recursive\AbstractBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Jream.Recursive.AbstractBase.html#FIND_BY_KEY"><b>FIND_BY_KEY</b></a>, 
+			<a href="class-Jream.Recursive.AbstractBase.html#FIND_BY_VALUE"><b>FIND_BY_VALUE</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Jream.Recursive.AbstractBase.html#properties">Jream\Recursive\AbstractBase</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Jream.Recursive.AbstractBase.html#$max_depth"><var>$max_depth</var></a>, 
+			<a href="class-Jream.Recursive.AbstractBase.html#$result"><var>$result</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
